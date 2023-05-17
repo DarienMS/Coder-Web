@@ -520,6 +520,7 @@ grid-area: f;
     .formulario{
         position: unset;
         margin: 0 15% 0 0;
+        padding: 0 0 10px 0;
         
     }
     .form-input-submit{
@@ -553,6 +554,9 @@ grid-area: f;
                           
     ;
     
+}
+.formulario{
+    width: 100% !important;
 }
 }
 
@@ -607,6 +611,9 @@ grid-area: f;
 }
 .formulario{
     width: 65%;
+}
+.article-formulario{
+    margin-bottom: 30px;
 }
 
 }
