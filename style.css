@@ -179,7 +179,7 @@ color: white;
     text-transform: capitalize;
     color: white;
     border-bottom: solid 4px white;
-    text-align: center;
+    
 
     
 
@@ -621,6 +621,9 @@ grid-area: f;
 @media (max-width: 910px){
     .body-index{
         justify-content: center;
+    }
+    .ofertas{
+        text-align: center;
     }
 }
 
