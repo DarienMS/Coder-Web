@@ -179,6 +179,7 @@ color: white;
     text-transform: capitalize;
     color: white;
     border-bottom: solid 4px white;
+    text-align: center;
 
     
 
@@ -616,6 +617,11 @@ grid-area: f;
     margin-bottom: 30px;
 }
 
+}
+@media (max-width: 910px){
+    .body-index{
+        justify-content: center;
+    }
 }
 
 
