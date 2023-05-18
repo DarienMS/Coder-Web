@@ -12,9 +12,7 @@ a{
     
     
 }
-ul{
-    padding-left: 0px;
-}
+
 body{
     display: flex;
     min-height: 100vh;
@@ -22,6 +20,16 @@ body{
     background-image:url(./image/patron-simple-abstracto-dorado-vectorial-costuras-cadenas_419911-941.jpg);
     background-attachment: fixed;
 }
+.main-index{
+    height: 120vh;
+}
+.main-galeria{
+    height: 100vh;
+}
+.main-c{
+    height: 80vh;
+}
+
 
 .img-portada{
     height: 70vh;
@@ -41,6 +49,9 @@ header{
     justify-content: space-between;
     
     
+}
+ul{
+    padding-left: 0px;
 }
 
 
@@ -117,7 +128,6 @@ body header h1{
 footer{
     background-color: rgb(0, 0, 0);
     text-align: center;
-    min-height: 100px;
     width: 100%;
     margin-top: auto;
     background-size: 100%;
