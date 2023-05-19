@@ -370,10 +370,38 @@ grid-area: f;
 .div-menu{
     display: flex;
     flex-direction: column;
-    padding-bottom: 15vh;
+    background-color: black;
+    margin: 150px 20vw 0 20vw;
+    padding-bottom: 20vh;
+    border-radius: 30px;
+    border: 5px solid black;
+    border-left-color: rgb(243, 83, 9);
+    border-right-color: rgb(243, 83, 9);
 }
+.div-menu h2{
+    color: rgb(248, 248, 248);
+    border-bottom: 3px solid;
+    border-bottom-color: rgb(243, 83, 9);
+    display: inline-block;
+    border-radius: 70px;
+    font-size: clamp(20px, 2.8vw, 3.2vw)
+}
+
 .div-menu ul{
     padding: 2px 8px 25px 8px;
+}
+
+.article-platos ul li, .puntos{
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    padding: 2px 8px 25px 8px;
+}
+.article-platos ul{
+    justify-content: center;
+    margin: 15px 0 60px 0;
 }
 
 
@@ -552,7 +580,7 @@ grid-area: f;
 
 }
 
-@media (max-width: 560px) {.galeria-img{
+@media (max-width: 660px) {.galeria-img{
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: repeat(6, 15%);
@@ -567,7 +595,7 @@ grid-area: f;
                             "f"
 
                           
-    ;
+    ;   
     
 }
 .formulario{
@@ -575,17 +603,19 @@ grid-area: f;
 }
 }
 
-@media (max-width: 850px){.platos-img img{
-    height: 150px;
-    width: 150px;
-}
+@media (max-width: 850px){
+
 .article-menu ul li, .puntos{
     font-size: clamp(10px, 2vw, 2.1vw);
 }
+.article-platos div ul li{
+    font-size: clamp(10px, 2vw, 2.1vw); 
+}
 }
 @media (max-width: 626px){.article-platos div , .article-platos div ul li{
-    margin: 0px;
+    margin: 20px 0 50px 0;
     padding: 20px 0 20px 0;
+   
 
 }
 .article-menu{
