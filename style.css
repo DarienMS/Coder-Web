@@ -601,7 +601,9 @@ grid-area: f;
 .formulario{
     width: 100% !important;
 }
+
 }
+
 
 @media (max-width: 850px){
 
@@ -613,11 +615,12 @@ grid-area: f;
 }
 }
 @media (max-width: 626px){.article-platos div , .article-platos div ul li{
-    margin: 20px 0 50px 0;
-    padding: 20px 0 20px 0;
+    margin: 20px 0 50px 0 ;
+    padding: 20px 0 20px 0 ;
    
 
 }
+
 .article-menu{
     margin: 0px;
 }
