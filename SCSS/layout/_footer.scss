@@ -1,0 +1,68 @@
+
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-top: 150px;
+
+    div ul li img{
+        height: 40px;
+        width: 40px;
+        
+    }
+} 
+.foot{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li{
+        display: inline-block;
+        margin-left: 40px;
+
+        button{
+            background-color: black;
+            border: none;
+
+            img:hover{
+                background-color: rgb(160, 156, 156);
+                transition: 0.7s;
+                box-shadow: 1px 1px 8px 3px;
+                transform: scale(1.5);
+            }
+        }
+    }
+    img{
+        border: solid rgb(12, 12, 12);
+        border-radius: 20px;
+        padding: x;
+        color: rgb(252, 249, 249);
+        background-color: rgb(80, 78, 78);
+        text-decoration: underline 2px rgb(250, 249, 249);
+        transition: 0.7s;
+    }
+} 
+
+
+
+    
+    
+
+
+
+
+
+.tel{
+margin: 8px 0 0 35px;
+display: inline-block;
+font-size: 18px;
+color: white;
+}
+.copyright{
+    color: white;
+    margin: 8px 0 10px 35px;
+    font-size: 16px;
+}

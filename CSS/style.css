@@ -1,48 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-image: url(../image/patron-simple-abstracto-dorado-vectorial-costuras-cadenas_419911-941.jpg);
+footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  background-size: 100%;
   background-attachment: fixed;
+  margin-top: 150px;
+}
+footer div ul li img {
+  height: 40px;
+  width: 40px;
 }
 
-.main-index {
-  height: 100%;
-  min-height: 100vh;
+.foot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.main-galeria {
-  height: 100%;
-  min-height: 100vh;
-}
-
-.main-c {
-  min-height: 80vh;
-  height: 100%;
-}
-
-.img-portada {
-  height: 70vh;
-  width: 45vw;
-  min-width: 500px;
+.foot li {
   display: inline-block;
-  border: solid black;
-  border-radius: 30px;
-  margin-left: 1vw;
+  margin-left: 40px;
+}
+.foot li button {
+  background-color: black;
+  border: none;
+}
+.foot li button img:hover {
+  background-color: rgb(160, 156, 156);
+  transition: 0.7s;
+  box-shadow: 1px 1px 8px 3px;
+  transform: scale(1.5);
+}
+.foot img {
+  border: solid rgb(12, 12, 12);
+  border-radius: 20px;
+  padding: x;
+  color: rgb(252, 249, 249);
+  background-color: rgb(80, 78, 78);
+  text-decoration: underline 2px rgb(250, 249, 249);
+  transition: 0.7s;
+}
+
+.tel {
+  margin: 8px 0 0 35px;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+}
+
+.copyright {
+  color: white;
+  margin: 8px 0 10px 35px;
+  font-size: 16px;
 }
 
 header {
@@ -53,24 +63,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
-header h1 {
-  display: inline-block;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  color: rgb(255, 254, 254);
-  border-bottom: 4px solid white;
-  border-radius: 10px;
-  border-width: 4px;
-  font-size: clamp(28px, 3vw, 3vw);
-  margin-left: 55px;
-  margin-top: 20px;
-}
-
-ul {
-  padding-left: 0px;
-}
-
 header nav ul li {
   display: flex;
   font-size: 18px;
@@ -83,10 +75,26 @@ header nav ul li {
   margin-right: 25px;
   color: rgb(15, 15, 15);
   box-shadow: 1px 1px 8px 2px white;
+  transition: 0.7s;
+}
+header ul {
+  padding-left: 0px;
+}
+header h1 {
+  display: inline-block;
+  font: clamp(28px, 3vw, 3vw) "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: rgb(255, 254, 254);
+  border-bottom: 4px solid white;
+  border-radius: 10px;
+  border-width: 4px;
+  margin-left: 55px;
+  margin-top: 20px;
 }
 
 .hover-menu {
   margin-right: 2vw;
+  transition: 0.7s;
 }
 
 .hover:hover {
@@ -106,68 +114,18 @@ header nav ul li {
   border-radius: 20px;
 }
 
-footer div ul li img {
-  height: 40px;
-  width: 40px;
-}
-
 body header h1 {
   display: inline-block;
 }
 
-footer {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  width: 100%;
-  margin-top: auto;
-  background-size: 100%;
-  background-attachment: fixed;
-  margin-top: 150px;
-}
-
-.foot {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.foot li {
+.img-portada {
+  height: 70vh;
+  width: 45vw;
+  min-width: 500px;
   display: inline-block;
-  margin-left: 40px;
-}
-
-.foot li button img:hover {
-  background-color: rgb(160, 156, 156);
-  transition: 0.7s;
-  box-shadow: 1px 1px 8px 3px;
-  transform: scale(1.5);
-}
-
-.foot li button {
-  background-color: black;
-  border: none;
-}
-
-.foot img {
-  border: solid rgb(12, 12, 12);
-  border-radius: 20px;
-  padding: x;
-  color: rgb(252, 249, 249);
-  background-color: rgb(80, 78, 78);
-  text-decoration: underline 2px rgb(250, 249, 249);
-}
-
-.tel {
-  margin: 8px 0 0 35px;
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-}
-
-.copyright {
-  color: white;
-  margin: 8px 0 10px 35px;
-  font-size: 16px;
+  border: solid black;
+  border-radius: 30px;
+  margin-left: 1vw;
 }
 
 .ofertas {
@@ -181,7 +139,6 @@ footer {
   color: white;
   border-bottom: solid 4px white;
 }
-
 .ofertas div {
   padding-top: 10px;
 }
@@ -219,22 +176,20 @@ footer {
   font-variant: small-caps;
   text-transform: capitalize;
 }
+.texto h4 {
+  margin-bottom: 8px;
+}
 
 .reserva {
   margin-top: 10px;
 }
-
 .reserva a {
   text-decoration: underline;
+  transition: 0.8s;
 }
-
 .reserva a:hover {
   color: goldenrod;
   transition: 0.8s;
-}
-
-.texto h4 {
-  margin-bottom: 8px;
 }
 
 .texto-body {
@@ -251,6 +206,23 @@ footer {
   column-gap: 2%;
   row-gap: 2%;
   grid-template-areas: "a b c" "d e f";
+}
+.galeria-img div {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 20px;
+  transition: 0.7s;
+}
+.galeria-img div img {
+  height: 100%;
+  width: 100%;
+  border: solid rgb(0, 0, 0);
+  border-radius: 8px;
+  position: relative;
+}
+.galeria-img div:hover {
+  transition: 0.7s;
+  transform: scale(1.2);
 }
 
 .galeria-img-1 {
@@ -275,25 +247,6 @@ footer {
 
 .galeria-img-6 {
   grid-area: f;
-}
-
-.galeria-img div {
-  display: inline-block;
-  margin: 10px;
-  margin-left: 20px;
-}
-
-.galeria-img div img {
-  height: 100%;
-  width: 100%;
-  border: solid rgb(0, 0, 0);
-  border-radius: 8px;
-  position: relative;
-}
-
-.galeria-img div:hover {
-  transition: 0.7s;
-  transform: scale(1.2);
 }
 
 .section-menu h2 {
@@ -321,7 +274,6 @@ footer {
   border-left-color: rgb(243, 83, 9);
   border-right-color: rgb(243, 83, 9);
 }
-
 .article-menu h2 {
   color: rgb(248, 248, 248);
   border-bottom: 3px solid;
@@ -335,8 +287,7 @@ footer {
   justify-content: center;
   margin: 15px 0 60px 0;
 }
-
-.article-menu ul li, .puntos {
+.article-menu ul li, .article-menu ul .puntos {
   color: white;
   font-size: 1.3vw;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -360,7 +311,6 @@ footer {
   border-left-color: rgb(243, 83, 9);
   border-right-color: rgb(243, 83, 9);
 }
-
 .div-menu h2 {
   color: rgb(248, 248, 248);
   border-bottom: 3px solid;
@@ -369,23 +319,21 @@ footer {
   border-radius: 70px;
   font-size: clamp(20px, 2.8vw, 3.2vw);
 }
-
 .div-menu ul {
-  padding: 2px 8px 25px 8px;
-}
-
-.article-platos ul li, .puntos {
-  color: white;
-  font-size: 1.3vw;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-variant: small-caps;
-  text-transform: capitalize;
   padding: 2px 8px 25px 8px;
 }
 
 .article-platos ul {
   justify-content: center;
   margin: 15px 0 60px 0;
+}
+.article-platos ul li, .article-platos ul .puntos {
+  color: white;
+  font-size: 1.3vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  padding: 2px 8px 25px 8px;
 }
 
 .main-c .section-contacto {
@@ -419,7 +367,6 @@ footer {
   height: 380px;
   position: relative;
 }
-
 .formulario h4 {
   margin-bottom: 19px;
   font-size: 25px;
@@ -475,7 +422,6 @@ footer {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-
 .article-maps h2 {
   display: inline-flex;
   justify-content: center;
@@ -486,15 +432,49 @@ footer {
   font-size: 30px;
   color: white;
 }
-
 .article-maps .maps {
   display: flex;
   justify-content: center;
 }
-
 .article-maps .maps iframe {
   height: 400px;
   width: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(../image/patron-simple-abstracto-dorado-vectorial-costuras-cadenas_419911-941.jpg);
+  background-attachment: fixed;
+}
+
+.main-index {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-galeria {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-c {
+  min-height: 80vh;
+  height: 100%;
 }
 
 /* Media Query */
@@ -610,6 +590,16 @@ footer {
   }
   .ofertas {
     text-align: center;
+  }
+  .hover:hover {
+    background-color: rgb(0, 0, 0) !important;
+    transition: 0.7s;
+    transform: scale(1) !important;
+  }
+  .hover-menu:hover {
+    background-color: rgb(0, 0, 0) !important;
+    transition: 0.7s;
+    box-shadow: 0px 0px 0px 0px !important;
   }
 }
 

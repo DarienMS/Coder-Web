@@ -1,0 +1,118 @@
+.main-c .section-contacto{
+    margin-top: 100px;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 100%;
+    grid-template-areas:"a b" ;
+    justify-content: space-evenly;
+
+    
+ }
+ 
+
+ 
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 20px 0 0px;
+    border: solid black;
+    background-color:rgba(0, 0, 0, 0.897);
+    border-radius: 20px;
+    border-bottom: solid rgb(243, 83, 9) 5px;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    padding: 20px 50px 50px 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-size: 21px; 
+    grid-area: a; 
+    width: 550px;
+    height: 380px;
+    position: relative;
+
+    h4{
+      margin-bottom: 19px;
+      font-size: 25px;
+      text-align: center;
+      color: white;
+      
+  }
+    
+ }
+  
+.form-input{
+   color: white;
+   line-height: normal; 
+}
+.input{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-input-submit{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    padding: 0 25px 0 25px ;
+    background-color: black;
+    color: white;
+    border: solid orangered 2px;
+    border-radius: 9px;
+    font-size: 16px;
+    
+
+}
+.form-input-submit:hover{
+    background-color: rgb(160, 156, 156);
+    transition: 0.7s;
+    text-decoration: underline 2px rgb(250, 249, 249);
+    box-shadow: 2px 2px 5px 2px;
+    transition: 0.7s;
+    transform: scale(1.2);
+}
+.form-input-submit:active{
+    color: goldenrod;
+    transition: 0.01s;
+}
+
+
+ .article-maps{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(2, 2, 2, 0.897);
+    padding-bottom: 40px;
+    border: solid black;
+    border-radius: 35px;
+    border-bottom: solid rgb(243, 83, 9) 5px;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+
+    h2{
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-variant: small-caps;
+      text-transform: capitalize;
+      font-size: 30px;
+      color: white;
+   }
+   .maps{
+      display: flex;
+      justify-content: center;
+      
+      iframe{
+         height: 400px;
+         width: 500px;
+     
+      }
+   }
+}
+
+
+
+ 
+ 
