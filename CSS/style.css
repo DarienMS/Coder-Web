@@ -285,6 +285,7 @@ body header h1 {
 
 .article-menu ul {
   justify-content: center;
+  align-items: center;
   margin: 15px 0 60px 0;
 }
 .article-menu ul li, .article-menu ul .puntos {
@@ -297,7 +298,7 @@ body header h1 {
 }
 
 .puntos {
-  letter-spacing: 0.5vw;
+  letter-spacing: 0.5vw !important;
 }
 
 .div-menu {
@@ -325,9 +326,19 @@ body header h1 {
 
 .article-platos ul {
   justify-content: center;
+  align-items: center;
   margin: 15px 0 60px 0;
 }
-.article-platos ul li, .article-platos ul .puntos {
+.article-platos ul li {
+  color: white;
+  font-size: 1.3vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  padding: 2px 8px 25px 8px;
+}
+
+.puntos {
   color: white;
   font-size: 1.3vw;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
