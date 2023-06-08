@@ -1,14 +1,25 @@
-$header-h1: clamp(28px, 3vw, 3vw) 'Courier New', Courier, monospace; 
+//VARIBALES//
+$header-h1: clamp(28px, 3vw, 3vw) 'Courier New', Courier, monospace;
+$galery-title-clamp:  clamp(8px, 1.2vw, 1.4vw);
+$galery-text-clamp:  clamp(6px, 1.0vw, 1.2vw);
 
 
-
+//IMPORTS//
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+//footer//
 @import "layout/footer";
+//header//
 @import "layout/header";
+//index//
 @import "views/index";
+//galeria//
 @import "views/galeria";
+//platos-tragos//
 @import "views/platos-tragos";
+//contactos//
 @import "views/contacto";
+//Media Queries//
+@import "base/mediaq";
 
 
 
@@ -50,168 +61,7 @@ body{
 
  
 
-         /* Media Query */
-
-
-
-
- @media (max-width: 1300px) {.ofertas{
-    font-size: 30px;
-    margin: 0px;
-
- }
- .texto{
-    font-size: 30px;
- }}
-
- @media (max-width: 520px) {.img-portada {
-    width: 250px;
-    min-width: 250px;
-    height: 300px;
-    
-    
-    
- }
- .ofertas{
-    padding: 0 0 20px 0;
- }
- .texto-body .texto{
-    width: 300px;
-    margin: 0px;
-}
- 
-}
-
-@media (max-width: 700px) {
-    header nav ul{
-        flex-direction: column; 
-    }
-    .formulario{
-        position: unset;
-        margin: 0 15% 0 0;
-        padding: 0 0 10px 0;
         
-    }
-    .form-input-submit{
-        position: unset;
-        padding: 0;
-        margin-top: 15px;
-    }
-}
-
-
-@media (max-width: 370px) { .foot li p{
-    font-size: 10px;  
-}
-
-}
-
-@media (max-width: 660px) {.galeria-img{
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: repeat(6, 15%);
-    margin: 2%;
-    column-gap: 2%;
-    row-gap: 2%;
-    grid-template-areas:    "a"
-                            "b"
-                            "c"
-                            "d"
-                            "e"
-                            "f"
-
-                          
-    ;   
-    
-}
-.formulario{
-    width: 100% !important;
-}
-
-}
-
-
-@media (max-width: 850px){
-
-.article-menu ul li, .puntos{
-    font-size: clamp(10px, 2vw, 2.1vw);
-}
-.article-platos div ul li{
-    font-size: clamp(10px, 2vw, 2.1vw); 
-}
-}
-@media (max-width: 626px){.article-platos div , .article-platos div ul li{
-    margin: 20px 0 50px 0 ;
-    padding: 20px 0 20px 0 ;
-   
-
-}
-
-.article-menu{
-    margin: 0px;
-}
-
-}
-@media (max-width: 450px){
-
-.formulario{
-    padding: 0px;
-    width: 100%;
-    
-    }
-   nav a{
-    font-size: 10px !important;
-    
-   }
-   nav ul li{
-    margin: 0px 0 0 0  !important;
-   }
-}
-
-
-@media (max-width: 1200px){.main-c .section-contacto{
-   grid-template-columns: 60%;
-   grid-template-rows: repeat(2, 50%); 
-   grid-template-areas: "a"
-                        "b";
-}
-.article-maps .maps iframe{
-    height: 300px;
-    width: 400px;
-
- }
- .main-c .section-contacto{
-    display: block;
-
-}
-.formulario{
-    width: 65%;
-}
-.article-formulario{
-    margin-bottom: 30px;
-}
-
-}
-@media (max-width: 910px){
-    .body-index{
-        justify-content: center;
-    }
-    .ofertas{
-        text-align: center;
-    }
-    .hover:hover{
-        background-color: rgb(0, 0, 0) !important;
-        transition: 0.7s;
-        transform: scale(1.0) !important;
-        
-    }
-    .hover-menu:hover{
-        background-color: rgb(0, 0, 0) !important;
-        transition: 0.7s;
-        box-shadow: 0px 0px 0px 0px !important;
-    
-    }
-}
 
 
 

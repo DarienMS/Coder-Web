@@ -198,55 +198,93 @@ body header h1 {
   margin-top: 50px;
 }
 
-.galeria-img {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: repeat(2, 50%);
-  margin: 2%;
-  column-gap: 2%;
-  row-gap: 2%;
-  grid-template-areas: "a b c" "d e f";
+.main-galeria {
+  display: flex;
+  margin-top: 70px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
 }
-.galeria-img div {
-  display: inline-block;
-  margin: 10px;
-  margin-left: 20px;
-  transition: 0.7s;
-}
-.galeria-img div img {
-  height: 100%;
-  width: 100%;
-  border: solid rgb(0, 0, 0);
-  border-radius: 8px;
+
+.card {
   position: relative;
+  width: 27vw;
+  height: 27vw;
+  color: #2e2d31;
+  background: #131313;
+  overflow: hidden;
+  border: solid 3px;
+  border-color: #000000;
+  border-radius: 20px;
+  box-shadow: 10px 25px 50px 5px;
+  margin: 20px;
 }
-.galeria-img div:hover {
-  transition: 0.7s;
-  transform: scale(1.2);
-}
-
-.galeria-img-1 {
-  grid-area: a;
-}
-
-.galeria-img-2 {
-  grid-area: b;
-}
-
-.galeria-img-3 {
-  grid-area: c;
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
-.galeria-img-4 {
-  grid-area: d;
+.temporary_text {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 1vw 1vw;
+  color: #f8f8f8;
 }
 
-.galeria-img-5 {
-  grid-area: e;
+.card_title {
+  font-weight: bold;
 }
 
-.galeria-img-6 {
-  grid-area: f;
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.6vw;
+  background: #000000;
+  border-top-left-radius: 20px;
+  transform: translateY(150px);
+  transition: transform 0.25s;
+}
+
+.card_content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -2vw;
+  width: 3vw;
+  height: 3vw;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #000000;
+}
+
+.card_title {
+  color: #131313;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2vw;
+  font-size: clamp(8px, 1.2vw, 1.4vw);
+  color: white;
+  font-variant: small-caps;
+}
+
+.card_description {
+  font-size: clamp(6px, 1vw, 1.2vw);
+  color: white;
+  font-variant: small-caps;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+}
+
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.25s;
 }
 
 .section-menu h2 {
@@ -452,42 +490,6 @@ body header h1 {
   width: 500px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-image: url(../assets/image/fondo2.jpg);
-  background-attachment: fixed;
-}
-
-.main-index {
-  height: 100%;
-  min-height: 100vh;
-}
-
-.main-galeria {
-  height: 100%;
-  min-height: 100vh;
-}
-
-.main-c {
-  min-height: 80vh;
-  height: 100%;
-}
-
 /* Media Query */
 @media (max-width: 1300px) {
   .ofertas {
@@ -526,6 +528,10 @@ body {
     padding: 0;
     margin-top: 15px;
   }
+  .card {
+    width: 35vw;
+    height: 35vw;
+  }
 }
 @media (max-width: 370px) {
   .foot li p {
@@ -533,15 +539,6 @@ body {
   }
 }
 @media (max-width: 660px) {
-  .galeria-img {
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: repeat(6, 15%);
-    margin: 2%;
-    column-gap: 2%;
-    row-gap: 2%;
-    grid-template-areas: "a" "b" "c" "d" "e" "f";
-  }
   .formulario {
     width: 100% !important;
   }
@@ -573,6 +570,10 @@ body {
   }
   nav ul li {
     margin: 0px 0 0 0 !important;
+  }
+  .card {
+    width: 80%;
+    height: 60vw;
   }
 }
 @media (max-width: 1200px) {
@@ -609,9 +610,44 @@ body {
   }
   .hover-menu:hover {
     background-color: rgb(0, 0, 0) !important;
-    transition: 0.7s;
+    transition: 0.7s !important;
     box-shadow: 0px 0px 0px 0px !important;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(../assets/image/fondo2.jpg);
+  background-attachment: fixed;
+}
+
+.main-index {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-galeria {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-c {
+  min-height: 80vh;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
